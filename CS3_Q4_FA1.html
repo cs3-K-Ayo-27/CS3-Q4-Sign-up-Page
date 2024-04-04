@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="author" content="Kathleen Ayo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  </head>
+  <body style="background-color:#E8B4B8;">
+    <div class="meowbox">
+      <h2>Sign-up Page</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        
+        <label for="username">Preferred Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter Preferred Username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        
+        <label for="cpassword">Confirm Password:</label>
+        <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter Address" required>
+        
+        <label for="interests">User Interests:</label>
+        <textarea id="interests" name="interests" placeholder="Place your interests here" required></textarea>
+        
+        <input type="submit" value="Submit" onclick="refresh()">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+    
+    <script>
+      function refresh(){
+        location.reload();
+      }
+    </script>
+    
+    <style>
+    body {
+        font-family: 'Inter';
+        font-size: 20px;
+    }
+    .meowbox {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: #EED6D3;
+        padding: 20px;
+        border-radius: 8px;
+        }
+    h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #c5b8b8;
+        border-radius: 9px;
+        box-sizing: border-box;
+        background-color: #e9d2d2;
+    }
+    textarea {
+        height: 98px;
+        font-family: 'Inter';
+        font-size: 15px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #A49393;
+        color: #ffeeee;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+    }
+    </style>
+  </body>
+</html>
